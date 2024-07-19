@@ -1,164 +1,245 @@
 <!DOCTYPE html>
-<html lang="en" id="home">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Ekstra IT</title>
+    <link rel="icon" type="image/x-icon" href="download-removebg-preview.png" />
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!-- Font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/style.css" />
-    <title>Landing Page | Ekstra IT</title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <header class="header">
+      <section class="flex fw-bold">
+        <a href="#home" class="logo">SMAN 1 PORONG</a>
+
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#courses">program</a>
+          <a href="#project">project</a>
+          <a href="#contact">contact</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+    </header>
   </head>
   <body>
+    <!-- header section starts  -->
 
-    <header>
-      <div class="navbar">
-        <div class="container">
-          <div class="box-navbar">
-            <div class="logo">
-              <h1>Ekstra IT</h1>
-            </div>
-            <ul class="menu">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">Materi</a></li>
-              <li><a href="#divisi">Divisi</a></li>
-              <li ><a href="#daftar">Daftar</a></li>
-            </ul>
-            <i class="fa-solid fa-bars menu-bar"></i>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Ekstra <span>IT</span></h3>
+        </div>
+
+        <div class="image">
+          <img src="images/homg-img.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- couter section stars  -->
+
+    <section class="count">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-user-graduate"></i>
+          <div class="content">
+            <h3>20+</h3>
+            <p>Anggota</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-chalkboard-user"></i>
+          <div class="content">
+            <h3>1</h3>
+            <p>Guru</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-face-smile"></i>
+          <div class="content">
+            <h3>94%</h3>
+            <p>Kepuasan<p>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="hero">
-        <div class="container" id="home">
-          <div class="">
-              <h1>
-                Selamat Datang <br />
-                di website Ekstra IT
-              </h1>
-            </div>
-            <p>GROW WITH TECHNOLOGY IS OUR SOLUTION</p>
-            <button ><a href="#about" style="color: white; text-decoration:none;"> Selengkapnya</a></button>
-            <div class="box">
-              <video autoplay loop muted>
-                <source src="r.mp4" type="video/mp4">
-                <!-- Jika video tidak didukung, Anda dapat menyediakan sumber lain seperti video dalam format WebM atau Ogg -->
-              </video>
-              <!-- Tambahkan konten lainnya di dalam elemen header di sini -->
+    <!-- couter section ends -->
 
-            </div>
-          </div>
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image">
+          <img src="images/about-img.svg" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>Apa itu ekstra IT?</h3>
+          <p>Ekstra IT adalah tempat dimana kamu bisa belajar, berbagi ilmu pengetahuan, dan meningkatkan kemampuan programming, editing , dll dalam situasi yang santai dan menyenangkan.</p>
         </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Services -->
-  
-    <!-- Services -->
-    <div class="daftar" id="about">
-      <div class="container">
-        <div class="box-daftar">
-          <h1>ABOUT</h1>
-          <p>Ekstra It fokus pada pengembangan dan penerapan ilmu komputer serta teknologi informasi.  Siswa akan belajar tentang berbagai konsep dasar ilmu komputer, seperti  algoritma dan pemrograman. Selain itu, anggota Esktra It juga akan terlibat dalam dokumentasi kegiatan, design poster, dan editing video.</h3>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- about section ends -->
 
-    <!-- Pantai -->
-    <div class="daftar" id="divisi">
-      <div class="container">
-        <div class="box-daftar">
-          <h1>
-            MATERI
-          </h1>
+    <!-- courses section starts  -->
 
-        </div>
-      </div>
-    <div class="pantai" id="divisi">
-      <div class="container">
-        <div class="box-pantai">
-          <div class="box">
-            <img src="assets/img/CODING.jpg" alt="" style="width: 95%;"/>
-            <h3>PROGAMMER</h3>
-            <p>kita akan mempelajari tentang bahasa pemrograman seperti HTML, CSS, PHP, JavaScript.</p>
-       
+    <section class="courses" id="courses">
+      <h1 class="heading">Pro<span>gram</span></h1>
+
+      <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/course-1.svg" alt="" />
+            <h3>Programmer</h3>
+            <p>Web developer adalah peran yang memungkinkan untuk membuat sebuah situs dari nol, dan ini bertanggung jawab untuk menulis kode dan membuatnya menjadi sebuah instruksi agar sebuah situs berjalan lancar.</p>
           </div>
-          <div class="box">
-            <img src="assets/img/kuliah-di-jurusan-desain-grafis-bantu-anda-memperluas-karir.jpg" alt="" style="max-width: 500px;"/>
-            <h3>EDITOR</h3>
-            <p>kita akan membuat sebuah design menggunakan photoshop untuk menciptakan design visual</p>
-         
+            <div class="swiper-slide slide">
+            <img src="images/course-4.svg" alt="" />
+            <h3>Design</h3>
+            <p>Design adalah dimana kita belajar membuat poster mengedit video dengan menggunakan software seperti canva photoshop mapun after effect.</p>
           </div>
-          <div class="box">
-            <img src="assets/img/Konten-Kreator-Content-Creators.jpg" alt="" style="width: 90%;"/>
-            <h3>CONTENT CREATOR</h3>
-            <p>Kita akan membuat sebuah content untuk mengisi media sosial ekstra dan ikut serta dalam dokumentasi kegiatan sekolah sekaligus editor video</p>
- 
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Pantai -->
-    <div class="daftar" id="map">
-      <div class="container">
-        <div class="box-daftar">
-          <h1>LOKASI</h1>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15821.346324193735!2d112.6897673!3d-7.5382221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7de41fd253ccb%3A0xcf6ce9058394f838!2sSMA%20Negeri%201%20Porong!5e0!3m2!1sid!2sid!4v1687237404098!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
+
+          <div class="swiper-slide slide">
+            <img src="images/course-5.svg" alt="" />
+            <h3>content creator</h3>
+            <p>
+              Content Creator adalah orang yang membuat konten edukatif atau menghibur. Konten yang dibuat oleh Content Creator bisa macam-macam, bisa video, podcast, digital art, dan lainnya. Konten-nya bisa dibagikan melalui media sosial
+              yang sesuai. Bisa YouTube, Twitter, TikTok, Instagram.
+            </p>
           </div>
         </div>
-      </div>
     
-      
-      
-      
 
-    <!-- Daftar -->
-    <div class="daftar" id="daftar">
-      <div class="container">
-        <div class="box-daftar">
-          <h1>
-            Tertarik dengan Ekstra IT? <br />
-            Segera Daftar Diri Anda!
-          </h1>
-          <h3>Klik Link di Bawah Ini!</h3>
-          <button><a href="http://wa.me//+6285161937400" style="color: white; text-decoration:none;"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></button>
-        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
-    <!-- Daftar -->
+    </section>
 
-    <!-- Footer -->
-    <div class="footer">
-      <div class="container">
-        <div class="box-footer">
-          <div class="box">
-            <h2>EKSITS.</h2>
-            <p></p>
-          </div>
-            <p>&copy; Copyright by <span>Ekstra IT </span> All Rights Reserved 2023, Indonesia</p>
-          </div>
+    <!-- courses section ends -->
+
+    <!-- teachers section starts  -->
+   <section class="teachers" id="project">
+    <div class="container">
+        <h1 class="heading">free<span> tutorial</span></h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="swiper-slide slide">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/-M7xEwdUqOg?si=0qDGYviSlACCD8j1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+            </div>
+            <div class="col-md-6">
+                <div class="swiper-slide slide">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TM1YSPOu_Vk?si=aM2ePurpz4b5hAMp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                   </div>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- Footer -->
+</section>
 
-    <script src="dist/js/script.js"></script>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- reviews section ends -->
+
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Daftar disini</span> !!</h1>
+      
+      <div class="row">
+        <div class="image">
+          <img src="images/contact-img.svg" alt="" />
+        </div>
+        <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+          <strong>Terimakasih!</strong> Pesan Anda telah diterima.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <form action="" method="post" name="submit-to-google-sheet">
+          <span>nama</span>
+          <input type="text" required placeholder="masukan nama lengkap" maxlength="50" name="nama" class="box" />
+          <span>kelas</span>
+          <input type="text" required placeholder="masukan kelas" maxlength="50" name="kelas" class="box" />
+          <span>nomor telp</span>
+          <input type="number" required placeholder=" masukan nomor" max="9999999999" min="0" name="telpon" class="box" onkeypress="if(this.value.length == 10) return false;" />
+               <span>jenis kelamin</span>
+          <div class="radio" name="gender">
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="laki-laki">laki-laki</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="perempuan">perempuan</label>
+          </div>
+          <input type="submit" value="send message" class="btn" name="send" /> 
+        </form>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <footer class="footer">
+      <section>
+     
+
+        <div class="credit">&copy; copyright 2024 by <span>EkstraIT</span> | all rights reserved!</div>
+      </section>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwrZvqMYOezGN4UwyM5S4vJ8WWi6efEgdfv9K7DZJisFKkRU7pC2D22FhPifhC-Hj5ISA/exec'
+      const form = document.forms['submit-to-google-sheet'];
+      const myAlert = document.querySelector('.my-alert');
+
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>{
+         // tampilkan alert
+         myAlert.classList.toggle('d-none');
+         // reset form
+         form.reset();
+         console.log('Success!', response)
+      })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    </script>
+    
+  </section>
   </body>
 </html>
